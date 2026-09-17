@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Emily Tuttle — sports journalism portfolio.">
+    <title>Emily Tuttle — The Sports Issue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to stories</a>
+    <header class="masthead">
+      <a class="wordmark" href="index.html" aria-label="Emily Tuttle home">ET <span>SPORTS</span></a>
+      <p class="issue-date">PORTFOLIO ISSUE / 01</p>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Issue</a>
+        <a href="rivets.html">Rivets</a>
+        <a href="sidelining-sundays.html">Cedars</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="issue-cover" aria-labelledby="issue-title">
+        <div class="cover-deck">
+          <p class="kicker">A PORTFOLIO BY EMILY TUTTLE</p>
+          <h1 id="issue-title">THE<br><em>SPORTS</em><br>ISSUE</h1>
+          <p class="cover-note">A field guide to reporting, writing, and finding the story beyond the stat line.</p>
+          <a class="cover-cta" href="#story-desk">Open the issue <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="cover-image">
+          <img src="assets/images/IMG_3926.jpeg" alt="Emily Tuttle at a basketball court with a press credential.">
+          <figcaption>ON LOCATION / GAME DAY</figcaption>
+        </figure>
+        <p class="cover-side">JOURNALISM · REPORTING · PEOPLE · PLAY</p>
+      </section>
+
+      <section id="story-desk" class="story-desk" aria-labelledby="desk-title">
+        <div class="section-heading">
+          <p class="kicker">READ THE ISSUE</p>
+          <h2 id="desk-title">Choose a feature.</h2>
+          <p>Each cover opens a different reporting desk.</p>
+        </div>
+        <div class="story-picker" role="tablist" aria-label="Featured stories">
+          <button class="story-choice is-active" id="rivets-tab" role="tab" aria-selected="true" aria-controls="feature-stage" data-story="rivets">
+            <span class="story-number">01</span>
+            <span>Game story<br><strong>Rivets / Peaches Night</strong></span>
+          </button>
+          <button class="story-choice" id="sundays-tab" role="tab" aria-selected="false" aria-controls="feature-stage" data-story="sundays">
+            <span class="story-number">02</span>
+            <span>Magazine feature<br><strong>Sidelining Sundays</strong></span>
+          </button>
+        </div>
+
+        <article id="feature-stage" class="feature-stage rivets-stage" role="tabpanel" aria-labelledby="rivets-tab" tabindex="0">
+          <div class="feature-visuals" aria-hidden="true">
+            <img class="stage-main" src="assets/images/Rivets2609.jpeg" alt="">
+            <img class="stage-detail" src="assets/images/Rivets846.jpeg" alt="">
+            <p class="visual-label">POSTGAME<br>REPORTING</p>
+          </div>
+          <div class="feature-copy">
+            <p class="feature-type">FEATURE 01 / GAME STORY</p>
+            <h3>Rivets Win Big on Peaches Night with 15 Strikeouts</h3>
+            <p class="feature-summary">this was a game story i wrote during my internship with the Rockford Rivets.</p>
+            <a class="read-link" href="rivets.html">Enter the reporting desk <span aria-hidden="true">→</span></a>
+          </div>
+          <aside class="stage-note">
+            <span>FIELD NOTE</span>
+            <p>Creative yet objective reporting.</p>
+          </aside>
+        </article>
+      </section>
+
+      <section class="editorial-strip" aria-label="Portfolio highlights">
+        <p>SPORTS JOURNALISM</p><span>✦</span><p>STORYTELLING</p><span>✦</span><p>REPORTING</p><span>✦</span><p>EDITORIAL LEADERSHIP</p>
+      </section>
+
+      <section class="from-the-field" aria-labelledby="field-title">
+        <div>
+          <p class="kicker">FROM THE FIELD</p>
+          <h2 id="field-title">Beyond what is read on a stat line.</h2>
+        </div>
+        <figure class="field-photo">
+          <img src="assets/images/Rivets851.jpeg" alt="Emily Tuttle at work during a reporting assignment.">
+          <figcaption>REPORTING IN PROGRESS</figcaption>
+        </figure>
+        <p class="field-copy">I am a passionate storyteller with a desire to find creative stories and utilize my competitive edge to share beyond what is read on a stat line. I have strong verbal communication skills to engage with both those that I work alongside and have the ability to lead. My love for sports differentiates me as I display a variety of media skills that I hope to use in sports journalism.</p>
+        <a class="outline-link" href="about.html">Meet Emily <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <p>EMILY TUTTLE / SPORTS JOURNALISM</p>
+      <a href="mailto:emilytuttle@cedarville.edu">emilytuttle@cedarville.edu</a>
+      <a href="https://www.linkedin.com/in/emily-tuttle-" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    </footer>
+    <script src="assets/site.js"></script>
+  </body>
+</html>
