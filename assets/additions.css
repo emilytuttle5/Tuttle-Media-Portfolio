@@ -83,6 +83,50 @@
 .award-feature h2 { margin: .5rem 0 1.2rem; font: 800 clamp(3rem, 5vw, 5.5rem)/.85 var(--sans); letter-spacing: -.06em; }
 .award-feature p:last-child { font-size: 1.15rem; }
 
+/* Cedars feature: one opening spread and one story/award spread. */
+.sidelining-hero {
+  min-height: 630px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: #183e56;
+  color: var(--paper);
+}
+.sidelining-hero .project-title { padding: 7vw 5vw; }
+.sidelining-hero figure,
+.sidelining-story figure,
+.hosting-stage-photo,
+.interview-note figure { margin: 0; position: relative; background: #17191e; }
+.sidelining-hero figure img,
+.sidelining-story figure img,
+.hosting-stage-photo img,
+.interview-note figure img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.sidelining-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+  align-items: center;
+  padding: 6rem 5vw;
+  background: #e0d7c5;
+}
+.sidelining-story figure img { height: auto; }
+.sidelining-copy > p:not(.kicker) { font-size: 1.1rem; }
+.award-note { margin: 2.5rem 0; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.award-note h2 { margin: .45rem 0 .8rem; font: 800 clamp(2.2rem, 4vw, 4.2rem)/.88 var(--sans); letter-spacing: -.06em; }
+.award-note p:last-child { margin-bottom: 0; }
+.inline-story-link { color: var(--ink); font: 700 1.25rem/1 var(--sans); text-decoration: none; border-bottom: 3px solid var(--red); padding-bottom: .25rem; }
+
+/* A clean stage photo supports the listening room without cropping it. */
+.hosting-stage-photo { grid-column: 1 / -1; margin-top: 3rem; max-height: 42rem; }
+.hosting-stage-photo img { height: auto; max-height: 42rem; }
+.interview-note { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; align-items: center; padding: 6rem 5vw; background: #e0d7c5; }
+.interview-note figure { max-height: 42rem; }
+.interview-note figure img { height: auto; max-height: 42rem; }
+.interview-note h2 { margin: .5rem 0 1rem; font: 800 clamp(3rem, 5vw, 5.5rem)/.84 var(--sans); letter-spacing: -.06em; }
+.interview-note p:last-child { margin-bottom: 0; font-size: 1.12rem; }
+
+/* The home-page inset image was creating the picture-in-picture effect. */
+.stage-detail { display: none; }
+
 @media (max-width: 760px) {
   .byline-desk { padding: 4rem 1.25rem; }
   .byline-heading { display: block; }
@@ -92,6 +136,11 @@
   .story-collection { padding: 4rem 1.25rem; }
   .story-grid { grid-template-columns: 1fr; gap: 2rem; }
   .award-feature { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 1.25rem; }
+  .sidelining-hero { grid-template-columns: 1fr; min-height: 0; }
+  .sidelining-hero .project-title { padding: 5rem 1.25rem; }
+  .sidelining-hero figure { max-height: none; }
+  .sidelining-story { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 1.25rem; }
+  .interview-note { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 1.25rem; }
 }
 
 .audio-desk {
