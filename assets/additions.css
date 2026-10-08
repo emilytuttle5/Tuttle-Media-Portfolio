@@ -1,0 +1,104 @@
+.byline-desk {
+  padding: 7rem 5vw;
+  background: #e0d7c5;
+}
+
+.byline-heading {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 2rem;
+  align-items: end;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.byline-heading h2 {
+  margin: 0;
+  font: 800 clamp(3.7rem, 7vw, 7rem)/.8 var(--sans);
+  letter-spacing: -.07em;
+}
+
+.byline-heading h2 em { font-family: var(--serif); font-size: .72em; }
+.byline-heading p:last-child { max-width: 17rem; margin: 0; }
+
+.byline-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+  margin-top: 3rem;
+}
+
+.byline-list { list-style: none; padding: 0; margin: 0; }
+.byline-list li { border-top: 1px solid var(--line); }
+.byline-list li:last-child { border-bottom: 1px solid var(--line); }
+.byline-list a {
+  display: grid;
+  grid-template-columns: minmax(6rem, 10rem) 2rem 1fr auto;
+  gap: .75rem;
+  align-items: start;
+  padding: 1.2rem 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+.byline-list a::before {
+  content: "";
+  grid-row: 1;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #faf8f2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.byline-columns > section:first-child .byline-list li:nth-child(1) a::before { background-image: url("images/cedars-sellars.png"); }
+.byline-columns > section:first-child .byline-list li:nth-child(2) a::before { background-image: url("images/cedars-minor-leagues.png"); }
+.byline-columns > section:first-child .byline-list li:nth-child(3) a::before { background-image: url("images/cedars-malone.png"); }
+.byline-columns > section:last-child .byline-list li:nth-child(1) a::before { background-image: url("images/rivets-18-2.png"); }
+.byline-columns > section:last-child .byline-list li:nth-child(2) a::before { background-image: url("images/rivets-walkoff.png"); }
+.byline-columns > section:last-child .byline-list li:nth-child(3) a::before { background-image: url("images/rivets-eusebio.png"); }
+.byline-list a:hover strong { color: var(--red); }
+.byline-list span { font: 500 .7rem/1.3 var(--mono); color: var(--red); padding-top: .3rem; }
+.byline-list strong { font: 700 clamp(1.35rem, 2vw, 2rem)/.95 var(--sans); letter-spacing: -.03em; }
+.byline-list b { font: 500 1.3rem/1 var(--sans); }
+
+@media (max-width: 760px) {
+  .byline-desk { padding: 4rem 1.25rem; }
+  .byline-heading { display: block; }
+  .byline-heading h2 { margin: 1rem 0 1.5rem; }
+  .byline-columns { grid-template-columns: 1fr; gap: 3rem; margin-top: 2.5rem; }
+  .byline-list a { grid-template-columns: 7rem 1.6rem 1fr auto; }
+}
+
+.audio-desk {
+  padding: 7rem 5vw;
+  background: var(--blue);
+  color: var(--paper);
+}
+.audio-heading {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr 1fr;
+  gap: 2rem;
+  align-items: end;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(243, 238, 228, .45);
+}
+.audio-heading .kicker { color: var(--gold); }
+.audio-heading h2 { margin: 0; font: 800 clamp(3.7rem, 7vw, 7rem)/.8 var(--sans); letter-spacing: -.07em; }
+.audio-heading h2 em { font-family: var(--serif); font-size: .72em; }
+.audio-heading p:last-child { margin: 0; max-width: 20rem; }
+.audio-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 4vw; margin-top: 3rem; }
+.audio-clip { display: grid; grid-template-columns: 2rem 1fr; gap: .75rem; padding: 1.25rem 0 1.5rem; border-top: 1px solid rgba(243, 238, 228, .45); }
+.audio-clip:nth-child(1), .audio-clip:nth-child(2) { border-top: 0; }
+.audio-number, .audio-date { margin: 0; font: 500 .7rem/1.3 var(--mono); letter-spacing: .08em; }
+.audio-number { color: var(--gold); padding-top: .25rem; }
+.audio-date { color: #b7cfde; }
+.audio-clip h3 { margin: .25rem 0 1rem; font: 700 2rem/.95 var(--sans); letter-spacing: -.03em; }
+.audio-clip audio { grid-column: 2; width: 100%; height: 2.4rem; }
+
+@media (max-width: 760px) {
+  .audio-desk { padding: 4rem 1.25rem; }
+  .audio-heading { display: block; }
+  .audio-heading h2 { margin: 1rem 0 1.5rem; }
+  .audio-list { grid-template-columns: 1fr; margin-top: 2.5rem; }
+  .audio-clip:nth-child(2) { border-top: 1px solid rgba(243, 238, 228, .45); }
+}
