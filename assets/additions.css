@@ -184,6 +184,8 @@
 .audio-heading h1, .audio-heading h2 { margin: 0; font: 800 clamp(3.7rem, 7vw, 7rem)/.8 var(--sans); letter-spacing: -.07em; }
 .audio-heading h1 em, .audio-heading h2 em { font-family: var(--serif); font-size: .72em; }
 .audio-heading p:last-child { margin: 0; max-width: 20rem; }
+.audio-intro { margin: 0; align-self: end; color: var(--gold); font: 500 .75rem/1.4 var(--mono); letter-spacing: .08em; }
+.audio-photo-note { grid-column: 2 / -1; padding-top: 1.25rem; border-top: 1px solid rgba(243, 238, 228, .45); font-size: 1.05rem; }
 .audio-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 4vw; margin-top: 3rem; }
 .audio-clip { display: grid; grid-template-columns: 2rem 1fr; gap: .75rem; padding: 1.25rem 0 1.5rem; border-top: 1px solid rgba(243, 238, 228, .45); }
 .audio-clip:nth-child(1), .audio-clip:nth-child(2) { border-top: 0; }
@@ -197,6 +199,8 @@
   .audio-desk { padding: 4rem 1.25rem; }
   .audio-heading { display: block; }
   .audio-heading h1, .audio-heading h2 { margin: 1rem 0 1.5rem; }
+  .audio-intro { margin-bottom: 2rem; }
+  .audio-photo-note { max-width: none; margin-top: 1.25rem !important; }
   .audio-list { grid-template-columns: 1fr; margin-top: 2.5rem; }
   .audio-clip:nth-child(2) { border-top: 1px solid rgba(243, 238, 228, .45); }
 }
