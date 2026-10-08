@@ -123,9 +123,11 @@
 .interview-note figure img { height: auto; max-height: 42rem; }
 .interview-note h2 { margin: .5rem 0 1rem; font: 800 clamp(3rem, 5vw, 5.5rem)/.84 var(--sans); letter-spacing: -.06em; }
 .interview-note p:last-child { margin-bottom: 0; font-size: 1.12rem; }
-.tressel-note { grid-template-columns: 1fr; gap: 1.5rem; padding: 3.5rem 5vw; }
-.tressel-note figure, .tressel-note > div { width: min(100%, 34rem); }
-.tressel-note h2 { font-size: clamp(2.5rem, 4vw, 4rem); }
+.reporting-brief { display: grid; grid-template-columns: 11rem minmax(0, 42rem); gap: 2rem; align-items: center; padding: 2.5rem 5vw; background: #e0d7c5; border-top: 1px solid var(--line); }
+.reporting-brief figure { margin: 0; position: relative; background: #17191e; }
+.reporting-brief img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain; }
+.reporting-brief h2 { margin: .35rem 0 .6rem; font: 800 clamp(2rem, 3.5vw, 3.6rem)/.88 var(--sans); letter-spacing: -.05em; }
+.reporting-brief p:last-child { max-width: 34rem; margin-bottom: 0; }
 .final-four-note { background: #f3eee4; }
 .final-four-video { position: relative; background: #17191e; }
 .final-four-video video { display: block; width: 100%; max-height: 42rem; background: #17191e; }
@@ -163,7 +165,7 @@
   .sidelining-hero figure { max-height: none; }
   .sidelining-story { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 1.25rem; }
   .interview-note { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 1.25rem; }
-  .tressel-note { gap: 1.25rem; padding: 3rem 1.25rem; }
+  .reporting-brief { grid-template-columns: 8rem 1fr; gap: 1.25rem; padding: 2rem 1.25rem; }
   .local-coverage { padding: 4rem 1.25rem; }
   .local-coverage-heading { display: block; }
   .local-coverage-heading h2 { margin: 1rem 0 1.5rem; }
@@ -188,8 +190,6 @@
 .audio-heading h1, .audio-heading h2 { margin: 0; font: 800 clamp(3.7rem, 7vw, 7rem)/.8 var(--sans); letter-spacing: -.07em; }
 .audio-heading h1 em, .audio-heading h2 em { font-family: var(--serif); font-size: .72em; }
 .audio-heading p:last-child { margin: 0; max-width: 20rem; }
-.audio-intro { margin: 0; align-self: end; color: var(--gold); font: 500 .75rem/1.4 var(--mono); letter-spacing: .08em; }
-.audio-photo-note { margin: 0; padding: .9rem 1rem; background: #102d42; color: var(--paper); border-top: 1px solid rgba(243, 238, 228, .45); font-size: 1.05rem; }
 .audio-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 4vw; margin-top: 3rem; }
 .audio-clip { display: grid; grid-template-columns: 2rem 1fr; gap: .75rem; padding: 1.25rem 0 1.5rem; border-top: 1px solid rgba(243, 238, 228, .45); }
 .audio-clip:nth-child(1), .audio-clip:nth-child(2) { border-top: 0; }
@@ -203,8 +203,6 @@
   .audio-desk { padding: 3.5rem 1.25rem 4rem; }
   .audio-heading { display: block; }
   .audio-heading h1, .audio-heading h2 { margin: 1rem 0 1.5rem; }
-  .audio-intro { margin-bottom: 2rem; }
-  .audio-photo-note { max-width: none; margin-top: 0 !important; }
   .audio-list { grid-template-columns: 1fr; margin-top: 2.5rem; }
   .audio-clip:nth-child(2) { border-top: 1px solid rgba(243, 238, 228, .45); }
 }
