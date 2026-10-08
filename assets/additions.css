@@ -127,6 +127,19 @@
 /* The home-page inset image was creating the picture-in-picture effect. */
 .stage-detail { display: none; }
 
+/* Two local stories are given a dedicated, compact football spread. */
+.local-coverage { padding: 7rem 5vw; background: var(--gold); }
+.local-coverage-heading { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 2rem; align-items: end; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
+.local-coverage-heading h2 { margin: 0; font: 800 clamp(3.7rem, 7vw, 7rem)/.8 var(--sans); letter-spacing: -.07em; }
+.local-coverage-heading h2 em { font-family: var(--serif); font-size: .7em; }
+.local-coverage-heading p:last-child { max-width: 15rem; margin: 0; }
+.local-story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; margin-top: 3rem; }
+.local-story-card { border-top: 1px solid var(--line); padding-top: 1rem; }
+.local-story-card .kicker { color: var(--ink); margin-bottom: .75rem; }
+.local-story-card h3 { margin: 0; font: 700 clamp(2rem, 3.8vw, 4rem)/.88 var(--sans); letter-spacing: -.055em; }
+.local-story-card a { color: var(--ink); text-decoration: none; }
+.local-story-card a:hover { color: var(--red); }
+
 @media (max-width: 760px) {
   .byline-desk { padding: 4rem 1.25rem; }
   .byline-heading { display: block; }
@@ -141,6 +154,10 @@
   .sidelining-hero figure { max-height: none; }
   .sidelining-story { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 1.25rem; }
   .interview-note { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 1.25rem; }
+  .local-coverage { padding: 4rem 1.25rem; }
+  .local-coverage-heading { display: block; }
+  .local-coverage-heading h2 { margin: 1rem 0 1.5rem; }
+  .local-story-grid { grid-template-columns: 1fr; gap: 2rem; margin-top: 2.5rem; }
 }
 
 .audio-desk {
