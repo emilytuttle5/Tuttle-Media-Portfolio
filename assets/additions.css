@@ -115,6 +115,16 @@
 .award-note p:last-child { margin-bottom: 0; }
 .inline-story-link { color: var(--ink); font: 700 1.25rem/1 var(--sans); text-decoration: none; border-bottom: 3px solid var(--red); padding-bottom: .25rem; }
 
+/* A tighter opening keeps the magazine feature, award and bylines in view. */
+.sidelining-hero { min-height: 490px; }
+.sidelining-hero .project-title { padding: 5vw; }
+.sidelining-hero .project-title h1 { font-size: clamp(3.8rem, 6.5vw, 7rem); }
+.sidelining-hero figure { display: grid; place-items: center; padding: 2rem; }
+.sidelining-hero figure img { width: auto; max-width: 100%; max-height: 360px; }
+.story-card-text-visual { aspect-ratio: 16 / 9; display: flex; flex-direction: column; justify-content: space-between; padding: 1rem; background: var(--gold); color: var(--ink); border: 1px solid rgba(17, 19, 24, .35); }
+.story-card-text-visual span { font: 500 .68rem/1 var(--mono); letter-spacing: .09em; }
+.story-card-text-visual strong { font: 800 clamp(1.8rem, 3vw, 3.2rem)/.82 var(--sans); letter-spacing: -.055em; }
+
 /* A clean stage photo supports the listening room without cropping it. */
 .hosting-stage-photo { grid-column: 1 / -1; margin-top: 1.5rem; max-height: 42rem; }
 .hosting-stage-photo img { height: auto; max-height: 42rem; }
