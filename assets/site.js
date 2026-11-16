@@ -9,17 +9,17 @@ if (menuButton && nav) {
 }
 
 const stories = {
-  rivets: {
-    type: 'FEATURE 01 / GAME STORY',
-    title: 'Rivets Win Big on Peaches Night with 15 Strikeouts',
-    summary: 'this was a game story i wrote during my internship with the Rockford Rivets.',
-    main: 'assets/images/Rivets2609.jpeg', detail: 'assets/images/Rivets846.jpeg', label: 'POSTGAME<br>REPORTING', note: 'Creative yet objective reporting.', link: 'rivets.html', action: 'Enter the reporting desk'
+  'little-game': {
+    type: 'FEATURE 01 / CEDARVILLE ATHLETICS',
+    title: 'Finding joy in the little game',
+    summary: 'Feature story published by Cedarville Athletics.',
+    main: 'assets/images/little-dribblers.jpg', detail: 'assets/images/little-dribblers.jpg', label: 'PHOTO BY<br>EMILY TUTTLE', note: 'Little Dribblers.', link: 'https://yellowjackets.cedarville.edu/news/2026/10/29/mens-soccer-finding-joy-in-the-little-game.aspx', action: 'Read the feature', external: true
   },
   sundays: {
     type: 'FEATURE 02 / CEDARS MAGAZINE',
     title: 'Sidelining Sundays: The impact of youth sports',
     summary: "the purpose of the story was to write about the impact of youth sports on church attendance and the difficult dichotomy of priorities and the growing draw of the youth sports world involvement.",
-    main: 'assets/images/IMG_4613.jpeg', detail: 'assets/images/Rivets846.jpeg', label: 'CEDARS<br>MAGAZINE', note: 'Sources, story, and space to consider.', link: 'sidelining-sundays.html', action: 'Open the magazine spread'
+    main: 'assets/images/sidelining-sundays-magazine.jpg', detail: 'assets/images/sidelining-sundays-award.png', label: 'CEDARS<br>MAGAZINE', note: 'Sources, story, and space to consider.', link: 'sidelining-sundays.html', action: 'Open the magazine spread', external: false
   }
 };
 
@@ -40,6 +40,9 @@ if (stage && choices.length) {
       stage.querySelector('h3').textContent = story.title;
       stage.querySelector('.feature-summary').textContent = story.summary;
       stage.querySelector('.read-link').href = story.link;
+      stage.querySelector('.read-link').toggleAttribute('target', story.external);
+      stage.querySelector('.read-link').toggleAttribute('rel', story.external);
+      if (story.external) stage.querySelector('.read-link').setAttribute('rel', 'noreferrer');
       stage.querySelector('.read-link').firstChild.textContent = `${story.action} `;
       stage.querySelector('.stage-note p').textContent = story.note;
       stage.classList.remove('is-changing');
