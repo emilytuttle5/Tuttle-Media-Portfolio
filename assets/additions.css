@@ -324,3 +324,27 @@
   .sidelines-clip { grid-template-columns: 1fr; }
   .sidelines-clip video { max-width: 190px; max-height: 260px; }
 }
+
+
+/* Keep the hosting portrait editorial, but less dominant. */
+.hosting-page .hosting-stage-photo {
+  grid-column: 2;
+  width: 100%;
+  max-width: 430px;
+  max-height: none;
+  margin: 0 auto;
+}
+.hosting-page .hosting-stage-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+}
+@media (max-width: 760px) {
+  .hosting-page .hosting-stage-photo {
+    max-width: 300px;
+    margin: 1.5rem 0 0;
+  }
+  .hosting-page .hosting-stage-photo img { max-height: 280px; }
+}
