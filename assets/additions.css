@@ -260,3 +260,67 @@
   .sideline-inline h2 { font-size: clamp(1.7rem, 6vw, 2.5rem); }
   .sideline-inline video { max-width: 145px; max-height: 240px; }
 }
+
+
+/* Sideline reporting: a self-contained, expandable editorial desk. */
+.sidelines-desk {
+  padding: clamp(3rem, 5vw, 5rem) 5vw;
+  background: #e0d7c5;
+  color: var(--ink);
+}
+.sidelines-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, .7fr);
+  gap: 2rem;
+  align-items: end;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.sidelines-heading h1 {
+  margin: .7rem 0 0;
+  font: 800 clamp(3rem, 6vw, 6rem)/.88 var(--sans);
+  letter-spacing: -.065em;
+}
+.sidelines-heading h1 em { font-family: var(--serif); font-size: .76em; }
+.sidelines-heading > p { max-width: 22rem; margin: 0; }
+.sidelines-clip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 240px);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  align-items: center;
+  max-width: 860px;
+  margin: 2rem auto 0;
+}
+.sidelines-clip-copy { max-width: 30rem; }
+.sidelines-clip h2 {
+  margin: .6rem 0 1rem;
+  font: 800 clamp(2rem, 3.6vw, 3.5rem)/.94 var(--sans);
+  letter-spacing: -.05em;
+}
+.sidelines-clip-copy > p:not(.kicker):not(.sidelines-meta) { max-width: 26rem; }
+.sidelines-meta {
+  margin-top: 1.6rem;
+  padding-top: .8rem;
+  border-top: 1px solid var(--line);
+  font: 500 .7rem/1.4 var(--mono);
+  letter-spacing: .06em;
+}
+.sidelines-clip video {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  max-height: 300px;
+  object-fit: contain;
+  background: #17191e;
+}
+@media (max-width: 760px) {
+  .sidelines-desk { padding: 3rem 1.25rem; }
+  .sidelines-heading { grid-template-columns: 1fr; gap: 1rem; }
+  .sidelines-clip { grid-template-columns: minmax(0, 1fr) minmax(0, 140px); gap: 1rem; }
+  .sidelines-clip video { max-width: 140px; max-height: 235px; }
+  .sidelines-clip h2 { font-size: clamp(1.5rem, 5vw, 2.25rem); }
+}
+@media (max-width: 400px) {
+  .sidelines-clip { grid-template-columns: 1fr; }
+  .sidelines-clip video { max-width: 190px; max-height: 260px; }
+}
