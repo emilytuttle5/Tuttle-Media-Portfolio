@@ -480,3 +480,56 @@
     max-height: 380px;
   }
 }
+
+
+/* Scale the entire On the Mic spread down as one composition. */
+.hosting-page .audio-desk {
+  padding-top: 3.25rem;
+  padding-bottom: 3.5rem;
+}
+.hosting-page .audio-heading,
+.hosting-page .audio-content {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hosting-page .audio-heading {
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.hosting-page .audio-heading h1 {
+  font-size: clamp(3.1rem, 5.2vw, 5.5rem);
+}
+.hosting-page .audio-content {
+  margin-top: 1.75rem;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+.hosting-page .audio-content .audio-clip {
+  padding: .9rem 0 1rem;
+}
+.hosting-page .audio-content .audio-clip h2 {
+  font-size: 1.65rem;
+  margin-bottom: .65rem;
+}
+@media (min-width: 761px) {
+  .hosting-page .audio-content {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  }
+  .hosting-page .audio-content .hosting-stage-photo {
+    max-width: 430px;
+  }
+  .hosting-page .audio-content .hosting-stage-photo img {
+    max-height: 470px;
+  }
+}
+@media (max-width: 760px) {
+  .hosting-page .audio-desk {
+    padding-top: 2.75rem;
+    padding-bottom: 3rem;
+  }
+  .hosting-page .audio-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
