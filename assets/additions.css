@@ -548,3 +548,34 @@
 @media (max-width: 760px) {
   .tressel-stage .feature-visuals { height: min(56vw, 320px); min-height: 190px; }
 }
+
+
+/* Team Tressel: edge-to-edge group photo with its natural wide proportions. */
+.tressel-stage {
+  min-height: 0;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: center;
+}
+.tressel-stage .feature-visuals {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 1649 / 928;
+  overflow: hidden;
+}
+.tressel-stage .stage-main {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 760px) {
+  .tressel-stage { grid-template-columns: minmax(0, 1fr); }
+  .tressel-stage .feature-visuals {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1649 / 928;
+  }
+}
