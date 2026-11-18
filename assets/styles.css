@@ -48,3 +48,12 @@
   .story-link { padding: 2.5rem 1.25rem; }
   .story-link a { font-size: clamp(2rem, 8vw, 3.25rem); }
 }
+
+
+/* Bring the Choose a Feature heading closer to the top of its section. */
+@media (min-width: 761px) {
+  .story-desk { padding-top: 3.5rem; }
+}
+@media (max-width: 760px) {
+  .story-desk { padding-top: 2.5rem; }
+}
