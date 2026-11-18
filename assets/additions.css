@@ -451,3 +451,32 @@
     grid-template-columns: minmax(0, 1fr) minmax(380px, 1.1fr);
   }
 }
+
+
+/* Make the sideline report a comfortable viewing size without overwhelming its section. */
+@media (min-width: 761px) {
+  .sidelines-clip {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 390px);
+    max-width: 1050px;
+    gap: clamp(2rem, 5vw, 5rem);
+  }
+  .sidelines-clip video {
+    max-width: 390px;
+    max-height: 490px;
+  }
+}
+@media (min-width: 401px) and (max-width: 760px) {
+  .sidelines-clip {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 220px);
+  }
+  .sidelines-clip video {
+    max-width: 220px;
+    max-height: 320px;
+  }
+}
+@media (max-width: 400px) {
+  .sidelines-clip video {
+    max-width: 270px;
+    max-height: 380px;
+  }
+}
