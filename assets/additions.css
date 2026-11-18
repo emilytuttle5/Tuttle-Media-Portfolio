@@ -533,3 +533,18 @@
     gap: 1.5rem;
   }
 }
+
+
+/* Team Tressel homepage feature: show the entire group photo without cropping. */
+.tressel-stage .feature-visuals {
+  height: 420px;
+  background: #e0d7c5;
+}
+.tressel-stage .stage-main {
+  object-fit: contain;
+  filter: none;
+}
+.tressel-stage .stage-detail { display: none; }
+@media (max-width: 760px) {
+  .tressel-stage .feature-visuals { height: min(56vw, 320px); min-height: 190px; }
+}
