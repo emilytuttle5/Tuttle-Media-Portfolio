@@ -413,3 +413,20 @@
   .hosting-page .audio-content .audio-list { margin-top: 0; }
   .hosting-page .audio-content .audio-clip:first-child { border-top: 1px solid rgba(243, 238, 228, .45); }
 }
+
+
+/* Balance the hosting portrait against the full stack of Resound recordings. */
+@media (min-width: 761px) {
+  .hosting-page .audio-content {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+  }
+  .hosting-page .audio-content .hosting-stage-photo {
+    max-width: 500px;
+    justify-self: end;
+  }
+  .hosting-page .audio-content .hosting-stage-photo img {
+    max-height: 540px;
+  }
+}
