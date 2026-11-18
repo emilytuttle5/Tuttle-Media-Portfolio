@@ -15,11 +15,11 @@ const stories = {
     summary: 'Feature story published by Cedarville Athletics.',
     main: 'assets/images/little-dribblers.jpg', detail: 'assets/images/little-dribblers.jpg', label: 'PHOTO BY<br>EMILY TUTTLE', link: 'https://yellowjackets.cedarville.edu/news/2026/10/29/mens-soccer-finding-joy-in-the-little-game.aspx', action: 'Read the feature', external: true
   },
-  sundays: {
-    type: 'FEATURE 02 / CEDARS MAGAZINE',
-    title: 'Sidelining Sundays: The impact of youth sports',
-    summary: "the purpose of the story was to write about the impact of youth sports on church attendance and the difficult dichotomy of priorities and the growing draw of the youth sports world involvement.",
-    main: 'assets/images/sidelining-sundays-magazine.jpg', detail: 'assets/images/sidelining-sundays-award.png', label: 'CEDARS<br>MAGAZINE', link: 'sidelining-sundays.html', action: 'Open the magazine spread', external: false
+  sellars: {
+    type: 'FEATURE 02 / CEDARS',
+    title: "The Sellars siblings' season of strength",
+    summary: "A Cedarville sports feature exploring the Sellars siblings' season of strength.",
+    main: 'assets/images/cedars-sellars.png', detail: 'assets/images/cedars-sellars.png', label: 'CEDARS<br>FEATURE', link: 'https://cedars.cedarville.edu/2026/05/the-sellars-siblings-season-of-strength/', action: 'Read the feature', external: true
   }
 };
 
