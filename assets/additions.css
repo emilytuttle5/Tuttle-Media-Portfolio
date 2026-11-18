@@ -430,3 +430,24 @@
     max-height: 540px;
   }
 }
+
+
+/* Give the portrait more presence without narrowing the audio-player column. */
+@media (min-width: 761px) {
+  .hosting-page .audio-content {
+    grid-template-columns: minmax(0, 1fr) minmax(480px, 1.1fr);
+    gap: clamp(1.25rem, 2.5vw, 2.5rem);
+  }
+  .hosting-page .audio-content .hosting-stage-photo {
+    max-width: 580px;
+    justify-self: stretch;
+  }
+  .hosting-page .audio-content .hosting-stage-photo img {
+    max-height: 630px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1050px) {
+  .hosting-page .audio-content {
+    grid-template-columns: minmax(0, 1fr) minmax(380px, 1.1fr);
+  }
+}
