@@ -15,11 +15,11 @@ const stories = {
     summary: 'Feature story published by Cedarville Athletics.',
     main: 'assets/images/little-dribblers.jpg', detail: 'assets/images/little-dribblers.jpg', label: 'PHOTO BY<br>EMILY TUTTLE', link: 'https://yellowjackets.cedarville.edu/news/2026/10/29/mens-soccer-finding-joy-in-the-little-game.aspx', action: 'Read the feature', external: true
   },
-  sellars: {
-    type: 'FEATURE 02 / CEDARS',
-    title: "The Sellars siblings' season of strength",
-    summary: "A Cedarville sports feature exploring the Sellars siblings' season of strength.",
-    main: 'assets/images/cedars-sellars.png', detail: 'assets/images/cedars-sellars.png', label: 'CEDARS<br>FEATURE', link: 'https://cedars.cedarville.edu/2026/05/the-sellars-siblings-season-of-strength/', action: 'Read the feature', external: true
+  tressel: {
+    type: 'FEATURE 02 / CEDARVILLE ATHLETICS',
+    title: 'CU Athletes Encourage Next Generation Through Team Tressel Fitness Challenge',
+    summary: "Cedarville student-athletes joined local schoolchildren for the Team Tressel Fitness Challenge, encouraging healthy habits through exercise demonstrations and personal connections.",
+    main: 'IMG_4486.jpeg', detail: 'IMG_4486.jpeg', label: 'CEDARVILLE<br>ATHLETICS', link: 'https://yellowjackets.cedarville.edu/news/2026/11/16/general-cu-athletes-encourage-next-generation-through-team-tressel-fitness-challenge.aspx', action: 'Read the feature', external: true
   }
 };
 
