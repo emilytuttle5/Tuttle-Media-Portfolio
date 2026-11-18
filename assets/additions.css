@@ -373,3 +373,43 @@
   .hosting-page .final-four-note { grid-template-columns: 1fr; }
   .hosting-page .final-four-video { max-width: 440px; }
 }
+
+
+/* Resound listening room: photo and audio updates share a balanced two-column spread. */
+.hosting-page .audio-heading {
+  grid-template-columns: minmax(0, .55fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+.hosting-page .audio-content {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+  margin-top: 2.5rem;
+}
+.hosting-page .audio-content .hosting-stage-photo {
+  grid-column: auto;
+  width: 100%;
+  max-width: 390px;
+  margin: 0;
+}
+.hosting-page .audio-content .hosting-stage-photo img {
+  width: 100%;
+  max-height: 430px;
+  object-fit: contain;
+}
+.hosting-page .audio-content .audio-list {
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 0;
+}
+.hosting-page .audio-content .audio-clip {
+  border-top: 1px solid rgba(243, 238, 228, .45);
+}
+.hosting-page .audio-content .audio-clip:first-child { border-top: 0; }
+@media (max-width: 760px) {
+  .hosting-page .audio-heading { display: block; }
+  .hosting-page .audio-content { grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem; }
+  .hosting-page .audio-content .hosting-stage-photo { max-width: 300px; margin: 0; }
+  .hosting-page .audio-content .hosting-stage-photo img { max-height: 300px; }
+  .hosting-page .audio-content .audio-list { margin-top: 0; }
+  .hosting-page .audio-content .audio-clip:first-child { border-top: 1px solid rgba(243, 238, 228, .45); }
+}
