@@ -26,3 +26,10 @@
     font-size: clamp(3rem, 12vw, 5rem);
   }
 }
+
+
+/* Give the portfolio byline a little more prominence on the homepage. */
+.issue-cover .cover-deck > .kicker {
+  font-size: clamp(.85rem, 1.1vw, 1rem);
+  letter-spacing: .09em;
+}
