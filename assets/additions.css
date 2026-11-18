@@ -348,3 +348,28 @@
   }
   .hosting-page .hosting-stage-photo img { max-height: 280px; }
 }
+
+
+/* Final Four video: keep its preview and playback at the same compact size. */
+.hosting-page .final-four-note {
+  grid-template-columns: minmax(0, 440px) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+}
+.hosting-page .final-four-video {
+  width: 100%;
+  max-width: 440px;
+  align-self: center;
+}
+.hosting-page .final-four-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: none;
+  object-fit: contain;
+  background: #17191e;
+}
+@media (max-width: 760px) {
+  .hosting-page .final-four-note { grid-template-columns: 1fr; }
+  .hosting-page .final-four-video { max-width: 440px; }
+}
